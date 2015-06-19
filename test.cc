@@ -1,3 +1,5 @@
+#include <stdio.h>
+using namespace std;
 int main() {
 	FILE *f;
 	unsigned char *img = NULL;
