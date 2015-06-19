@@ -3,7 +3,7 @@ using namespace std;
 int main() {
 	FILE *f;
 	unsigned char *img = NULL;
-	int filesize = 54 + 3*w*h;  //w is your image width, h is image height, both int
+	int filesize = 54 + 3*300*300;  //w is your image width, h is image height, both int
 	if( img )
 		free( img );
 	img = (unsigned char *)malloc(3*w*h);
@@ -15,9 +15,9 @@ int main() {
 		{
 			x=i;
 			y=(yres-1)-j;
-			r = red[i][j]*255;
-			g = green[i][j]*255;
-			b = blue[i][j]*255;
+			float r = red[i][j]*255;
+			float g = green[i][j]*255;
+			float b = blue[i][j]*255;
 			if (r > 255) r=255;
 			if (g > 255) g=255;
 			if (b > 255) b=255;
