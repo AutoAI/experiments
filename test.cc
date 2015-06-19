@@ -15,9 +15,9 @@ int main() {
 		{
 			x=i;
 			y=(yres-1)-j;
-			float r = red[i][j]*255;
-			float g = green[i][j]*255;
-			float b = blue[i][j]*255;
+			r = red[i][j]*255;
+			g = green[i][j]*255;
+			b = blue[i][j]*255;
 			if (r > 255) r=255;
 			if (g > 255) g=255;
 			if (b > 255) b=255;
