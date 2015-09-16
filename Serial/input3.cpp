@@ -11,7 +11,7 @@ int main() {
 
 			unsigned char writeBuffer[] = { number };
 			printf("%d\n", writeBuffer[0]);
-			fwrite(writeBuffer, sizeof(unsigned char), sizeof(writeBuffer), serPort);
+			fprintf(serPort, "%x", number);
 		}
 		fclose(serPort);
 		return 0;
