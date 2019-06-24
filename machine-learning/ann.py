@@ -1,3 +1,4 @@
+from __future__ import print_function
 from pybrain.tools.shortcuts import buildNetwork
 from pybrain.datasets import SupervisedDataSet
 from pybrain.supervised.trainers import BackpropTrainer
@@ -23,4 +24,4 @@ while error > .002:
 	error = trainer.train()
 
 # predict the results of these observations
-print ann.activate((0, 2)), ann.activate((1, 5))
+print(ann.activate((0, 2)), ann.activate((1, 5)))
