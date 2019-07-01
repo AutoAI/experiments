@@ -1,3 +1,4 @@
+from __future__ import print_function
 from sklearn import svm
 
 # the data, totally made up by travis
@@ -9,4 +10,4 @@ classifier = svm.SVC()
 classifier.fit(X, y)
 
 # predict the class of this observation
-print classifier.predict([[0, 2]]), classifier.predict([[2, 5]])
+print(classifier.predict([[0, 2]]), classifier.predict([[2, 5]]))
